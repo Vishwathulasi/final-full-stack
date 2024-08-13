@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hotel.css */
+
+.hotel-large-container {
+    padding: 20px;
+  }
+  
+  .hotel-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hotel-heading {
+    margin-bottom: 20px;
+  }
+  
+  .hotel-filters {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .hotel-filters .MuiFormControl-root,
+  .hotel-filters .MuiTextField-root {
+    margin-bottom: 10px;
+  }
+  
+  .hotel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .hotel-card {
+    width: 300px;
+  }
+  
+  .hotel-card .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hotel-card .MuiCardActions-root {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .hotel-card img {
+    object-fit: cover;
+  }
+  
+  .hotel-btn {
+    margin-top: 10px;
+  }
+  

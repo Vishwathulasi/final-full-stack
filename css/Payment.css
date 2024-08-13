@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.payment-large-container{
+  background-color: black;
+}
+.payment-page {
+  /* background-color: white;  */
+  color: black; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+.payment-container {
+  background-color: whitesmoke; /* Dark gray container */
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan-section {
+  flex: 1;
+}
+
+.summary-section {
+  background-color: #726e6e; /* Slightly lighter dark gray */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 0.5;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.plan-options {
+  margin-bottom: 20px;
+}
+
+.plan-option {
+  margin-bottom: 10px;
+}
+
+.plan-option label {
+  margin-left: 10px;
+}
+
+.continue-button {
+  background-color: #726e6e; /* Purple button */
+  color:black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.continue-button:hover {
+  background-color: black;
+  color: white; /* Darker purple on hover */
+}
+
+.summary-section h2 {
+  font-size: 24px;
+}
+
+.total-amount {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .payment-container {
+    flex-direction: row;
+  }
+
+  .plan-section, .summary-section {
+    flex: 1;
+  }
+}

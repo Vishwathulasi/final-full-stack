@@ -1,0 +1,94 @@
+
+
+   .my-events-container {
+    padding: 20px;
+    padding-top: 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .my-events-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .my-events-head h1 {
+    flex-grow: 1;
+    text-align: center; /* Center the heading */
+    margin: 0;
+  }
+  
+  .search-box {
+    position: absolute;
+    right: 130px;
+  }
+  
+  .search-box .MuiOutlinedInput-root {
+    background-color: white; /* Set search box background to white */
+    color: black; /* Set text color to black */
+  }
+  
+  .events-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Center the cards within the container */
+    max-width: 1260px; /* 3 cards per row, each 400px + 20px gap */
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  .event-card {
+    width: 400px; /* Set card width to 400px */
+    cursor: pointer;
+    height: 400px;
+    margin-bottom: 20px; /* Added this for bottom gap */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .my-event-btn{
+    border-radius: 5px;
+    width: 100px;
+  }
+  @keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.event-card:hover {
+    animation: bounceIn 0.5s;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+  @media (max-width: 1260px) {
+    .events-cards {
+      max-width: 840px; /* 2 cards per row when screen is smaller */
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .event-card {
+      width: calc(50% - 20px); /* 2 cards per row for smaller screens */
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .event-card {
+      width: 100%; /* 1 card per row for very small screens */
+    }
+  }
+  

@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.admin-profile-large-container{
+  height: 800px;
+  background-color: black;
+  
+}
+.profile-admin-container {
+  padding: 20px;
+  padding-top: 250px;
+}
+
+.profile-admin-details {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.profile-admin-view, .profile-admin-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-admin-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.admin-profile-btn:hover{
+  opacity: 0.5;
+}
+
+.profile-admin-buttons .MuiButton-root {
+  margin: 0 5px;
+}

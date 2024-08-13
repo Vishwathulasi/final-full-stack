@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.venue-large-container {
+    padding: 20px;
+    padding-top: 150px;
+    background-color: black;
+    color: white;
+}
+
+.venue-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.venue-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.venue-head h1 {
+    color: white;
+}
+
+.grid-venue{
+    margin-top: 20px;
+}
+/* .venue-search-bar {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 5px;
+} */
+
+/* Update the filter styles here */
+.venue-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.venue-filter select,
+.venue-filter input {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.venue-filter label {
+    color: black;
+    margin-right: 10px;
+}
+
+.venue-card {
+    background-color: white;
+    color: black;
+    transition: transform 0.2s ease;
+    border: 1px solid white;
+    /* padding: 20px; */
+    height: 450px;
+}
+
+.venue-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.venue-card h2 {
+    color: white;
+}
+
+.venue-card p {
+    color: #ccc;
+}
+
+.venue-card .info-field {
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #444;
+}
+
+.venue-card .info-field label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+
+}
+.venue-page-btn{
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 10px;
+}
+.venue-page-btn:hover{
+    background-color: white;
+    color: black;
+}
+.venue-card-btn{
+    background-color: #444;
+    color: white;
+    padding: 3px;
+}
+.venue-new-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+/* .venue-card button {
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+} */
+
+/* .venue-card button:hover {
+    background-color: #777;
+} */
+
+.venue-card .booked {
+    background-color: red;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.venue-search-bar {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.custom-text-field {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .venue-filter {
+      flex-direction: column;
+    }
+  
+    .venue-search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+}

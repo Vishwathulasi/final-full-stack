@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mypayments-container {
+    background-color: black;
+    padding: 20px;
+    padding-top: 200px;
+    height: 800px;
+}
+
+.mypayments-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mypayments-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mypayments-table th, .mypayments-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.mypayments-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+}
+
+.mypayments-table td {
+    font-size: 14px;
+    color: black;
+}
+.mypayments-table p {
+    font-size: 14px;
+    color: black;
+}
+
+.mypayments-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.mypayments-table tr:hover {
+    background-color: #f1f1f1;
+}
